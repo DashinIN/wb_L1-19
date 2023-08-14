@@ -6,7 +6,7 @@
 
 // window.location.href = 'https://oauth.vk.com/authorize?client_id=51728435&display=page&redirect_uri=https://dashinin.github.io/wb_L1-19&scope=wall&response_type=token&v=5.131&state=123456'
 //ww
-console.log(window.location.hash)
+const token = window.location.hash.split("=")[1].split("&")[0]
 
 const wrapper = document.querySelector('.wrapper')
 const trigger = document.querySelector('.trigger')
@@ -29,7 +29,7 @@ const fetchPosts = async () =>
         domain: 'shikimori', 
         count: count,
         offset: offset,
-        access_token: 'vk1.a.Q4T6lgDmOZ5T4yHTsm-lbKwkk7uE8XRDse6T2Q99xPWXjMFBc78C4UXlcmXiG3JchQDo7Bdnxf6MhF_EJYbdIp4-6p3k0fTu3A2rDKSjDeXFoAMc7raj-vpqjCnZR6otaAOAlS-ohWH7pDffcrwDrIsg4qdIkmeBRBX6iOpQsf9YvctKU-VCEtcDQA7Z0o-8PyRWB70NnbZNuCE3ICTDLQ',
+        access_token: token,
         v: 5.131
         },  (r) => {
            if(r.response.items) {
