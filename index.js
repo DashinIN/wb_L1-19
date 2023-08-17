@@ -123,8 +123,8 @@ const observer = new IntersectionObserver(entries => {
 //С помощью VK API делаем вызов к конкретному сообществу, передавая токен авторизованного пользователя
 const fetchPosts = async () =>
     VK.Api.call('wall.get', {
-        owner_id: -9273458,
-        domain: 'shikimori', 
+        owner_id: -29534144,
+        domain: 'lentach', 
         count: count,
         offset: offset,
         access_token: token,
