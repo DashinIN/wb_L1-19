@@ -21,6 +21,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 20px;
 }
 
 .wrapper {
@@ -31,6 +32,7 @@ body {
     max-width: 800px;
     height: 85vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     background-color: #b0d5ff;
     padding: 10px;
 }
